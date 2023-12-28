@@ -10,24 +10,22 @@ Client installation (If you have played on yuuki before you can skip this part)
 
 ## Server Installation 
 1. Download and install F-droid [here](https://f-droid.org/)
-2. Open F-droid and search for "Nix-on-Droid" and install the app
-3. Open Nix-on-Droid
-4. When you first open the application it may ask you for notifications permission (android 13 and up) and a prompt for "Bootstrap zipball location" will appear and you need to click on yes (The bootstrap setup may fail and ask you to retry. Press on try again)
-5. When the installation of bootstrap packages finishes you will need to write ```y``` and press enter on your keyboard
-6. Wait for everything to finish(It will take a while so be patient. If it looks like its stuck, its not be patient it will eventually finish)
-7. After everything finishes copy the command bellow and paste it onto the terminal by long pressing and clicking paste (This too will take a while be patient)
+2. Open F-droid and search for "Termux" and install the app
+3. Open Termux
+4. When you first open the application it may ask you for notifications permission (android 13 and up). You can safely allow it.
+7. Copy the command bellow and paste it onto the terminal by long pressing and clicking paste (This will take a while be patient)
 ```sh
-nix-channel --add https://nixos.org/channels/nixos-22.05 nixpkgs && nix-channel --update && nix-env -iA nixpkgs.git && git clone https://github.com/kostas214/Grasscutters-on-android/ && cd Grasscutters-on-android && . install.sh
+pkg install git -y && git clone https://github.com/shimpact003/Grasscutters-on-android/ && cd Grasscutters-on-android && . install.sh
 ```
 Congratulations you have succesfully installed the Grasscutter server
 
 ## Starting the server
-1. Open Nix-on-droid application
+1. Open Termux application
 2. Copy and paste this command
 ```sh
 . start.sh
 ```
-3. type ```account name``` (You can replace name with any name you want that doesn't containe spaces)
+3. type ```account create name``` (You can replace name with any name you want that doesn't containe spaces)
 
 **This step only needs to be done the first time you run the server and can be skipped after the first time** 
 
@@ -54,7 +52,7 @@ Congratulations you have succesfully installed the Grasscutter server
 
 OTHERWISE YOU WILL NOT BE ABLE TO CONNECT TO THE INTERNET
 
-2. Open the nix-on-droid application press ```ctrl``` using the buttons above keyboard and ```c``` then copy paste ```. stop.sh``` and then press enter. You need to do that for the 2 sessions (the sessions will change automatically)
+2. Open Termux and press ```ctrl``` using the buttons above keyboard and ```c``` then copy paste ```. stop.sh``` and then press enter. You need to do that for the 2 sessions (the sessions will change automatically)
 
 ## Credits 
 1. Me
