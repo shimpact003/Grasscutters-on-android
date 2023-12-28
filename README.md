@@ -1,5 +1,5 @@
 # Grasscutters-on-android
-### A comprehensive guide on how to run the grasscutters server locally on your android device 
+### A comprehensive guide on how to run the grasscutter server locally on your android device 
 ## **READ ALL THE INSTRUCTIONS CAREFULLY BEFORE STARTING**
 
 Client installation (If you have played on yuuki before you can skip this part)
@@ -13,7 +13,7 @@ Client installation (If you have played on yuuki before you can skip this part)
 2. Open F-droid and search for "Termux" and install the app
 3. Open Termux
 4. When you first open the application it may ask you for notifications permission (android 13 and up). You can safely allow it.
-7. Copy the command bellow and paste it onto the terminal by long pressing and clicking paste (This will take a while be patient)
+7. Copy the command below and paste it onto the terminal by long pressing and clicking paste (This will take a while be patient)
 ```sh
 pkg install git -y && git clone https://github.com/shimpact003/Grasscutters-on-android/ && cd Grasscutters-on-android && . install.sh
 ```
@@ -25,7 +25,7 @@ Congratulations you have succesfully installed the Grasscutter server
 ```sh
 . start.sh
 ```
-3. type ```account create name``` (You can replace name with any name you want that doesn't containe spaces)
+3. type ```account create name``` (You can replace name with any name you want that doesn't contain spaces)
 
 **This step only needs to be done the first time you run the server and can be skipped after the first time** 
 
@@ -35,14 +35,14 @@ Congratulations you have succesfully installed the Grasscutter server
 . run.sh
 ```
 7. Exit the application without closing it
-8. Open settings navigate to wifi settings tap on the gear icon (samsung) or the right pointing arrow (xiaomi) tap "show more" if needed and scroll down until you see Proxy tap on the option and select "manual". Now on the "Proxy hostname" type ```127.0.0.1``` and on "Proxy Port" ```8080```
+8. Open settings, navigate to wifi settings, tap on the gear icon (samsung) or the right pointing arrow (xiaomi), tap "show more" if needed and scroll down until you see Proxy. Tap on it and select "manual". As the "Proxy hostname" type ```127.0.0.1``` and as "Proxy Port" ```8080```
 9. You are now ready to launch the 4.0 client of the game
-10. The credentials must be your account name you have selected on step 3 and any letter for the password.
-11. Press on the checkbox bellow the password box and login
-12. The first time you log into the game you will see the opening cutscene. You need to select the twins name the press confirm once and close out of the game and log back in
+10. The credentials must be your account name you have selected on step 3 and anything for the password.
+11. Press on the checkbox below the password box and login
+12. The first time you log into the game you will see the opening cutscene. Select one of the twins, name them and confirm.
 13. Congratulations you are now playing genshin impact completly offline 
 ## ONE TIME SETUP
-1. After you have connected to the proxy server you need to go to this website [mitm.it](mitm.it)
+1. After you have connected to the proxy server you need to go to this website [mitm.it](http://mitm.it)
 2. Scroll down until you see Android and tap on get ```mitmproxy-ca-cert.cer```
 3. In settings search for ```CA certificate```
 4. After pressing install anyways and providing your password navigate to the folder you downloaded the file from the previous step (probably the downloads folder) and select it
@@ -58,7 +58,7 @@ OTHERWISE YOU WILL NOT BE ABLE TO CONNECT TO THE INTERNET
 1. Me
 2. The grasscutter team [Their github page](https://github.com/Grasscutters/Grasscutter)
 3. Yuuki for providing the patched client of the game and making the proxy server i use [Their website](http://ps.yuuki.me/)
-4. Nix-on-droid team for making the application used in this tutorial [Their github page](https://github.com/nix-community/nix-on-droid) 
+4. Termux team for making the application used in this tutorial [Their github page](https://github.com/termux/termux-app) 
 ## Issues
 If you run into any issues the first thing you should do is restart the server. Most issues will likely be fixed 
 
